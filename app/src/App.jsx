@@ -22,7 +22,7 @@ const App = () => {
         setLoading(false);
       } catch (error) {
         setError("Unable to fetch food data");
-        setLoading(false); // Ensure loading is set to false even in case of an error
+        setLoading(false); 
       }
     };
 
@@ -99,10 +99,6 @@ const App = () => {
           isSelected = { selectedbtn === value.type}
           key={value.name} onClick={() => filterFood(value.type)}>{value.name}</Button>))
       }
-
-        {/* <Button onClick={() => filterFood("breakfast")}>Breakfast</Button>
-        <Button onClick={() => filterFood("lunch")}>Lunch</Button>
-        <Button>Dinner</Button> */}
       </FilterContainer>
 
     </Container>
